@@ -1,0 +1,90 @@
+<html>
+<head>
+
+<script>
+function chks()
+{
+			var r1=/[\D\]+[A-Za-z]/
+			var abc1=document.getElementById("dstate").value;
+ 			with(window.document.forms.dform1)
+ 				{
+					if(r1.test(abc1))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						dstate.value="";
+					}
+				}
+}
+function chkc()
+{
+			var r2=/[\D\]+[A-Za-z]/
+			var abc2=document.getElementById("dcity").value;
+ 			with(window.document.forms.dform1)
+ 				{
+					if(r2.test(abc2))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						dcity.value="";
+					}
+				}
+}
+function chka()
+{
+			var r3=/[\D\]+[A-Za-z]/
+			var abc3=document.getElementById("darea").value;
+ 			with(window.document.forms.dform1)
+			{
+					if(r3.test(abc3))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						darea.value="";
+					}
+			}
+}
+function chk()
+{
+ 	with(window.document.forms.dform1)
+	{
+		if((dstate.value=="")||(dcity.value=="")||(darea.value==""))
+		{
+			alert('fill all fields properly');
+		}
+		else
+		{
+			alert('The information related to your required doner will be sended to your massenger as well as to email');
+		}
+	}
+}
+</script>
+</head>
+<body>
+<fieldset><legend>
+<font text="times new roman" color="red">
+<h3>Search A Donor</h3></legend>
+</font>
+<form name="dform1" method="post" action="php/srchd.php">
+State<input type="text" name="dstate" id="dstate"><br><br>
+City<input type="text" name="dcity" id="dcity"><br><br>
+Select your blood group<select id="blg" name="blg">
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select><br><br>
+<input type="submit" value="Find" color="red">
+</fieldset>
+</body>
+</html>

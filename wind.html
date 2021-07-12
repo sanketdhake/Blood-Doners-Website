@@ -1,0 +1,45 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function returnv()
+{
+	var a;
+	a=window.document.getElementById('uname').value;
+	document.write(a);
+	return a;
+}
+function dyn()
+{
+	var ex=window.open("wind1.html","mydoc","height=250","width250");
+		
+	ex.document.write('<html>');
+	ex.document.write('<head>');
+	ex.document.write('<h3>hiiieee</h3>');
+	ex.document.write('<script>');
+	var b=returnv();
+	ex.document.write("document.write('Hello'+b)");
+	ex.document.write('<\/script>');
+	ex.document.write('<\/head>');
+	ex.document.write('<body>');
+
+	ex.document.write('<\/body>');
+
+	ex.document.write('<\/html>');
+	
+	//ex.document.write('');
+
+
+}
+</SCRIPT>
+</head>
+
+<body>
+<font text="times new roman" color="red">
+click
+</font>
+<form name="frm">
+	<input type="text" name="uname" id="un">
+<input type="button" value="click"  onclick="dyn()">
+</form>
+</body>
+</html>

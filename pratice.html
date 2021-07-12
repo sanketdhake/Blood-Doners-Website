@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="proj.css">
+    <link rel="stylesheet" href="practicecss.css">
+
+<marquee><img src="slide1.jpg" height="100" width="200"><img src="images4.jpg" height="100" width="200"><img src="images2.jpg" height="100" width="200"><img src="images3.jpg" height="100" width="200"><img src="img1.jpg" height="100" width="200"><img src="img2.jpg" height="100" width="200"><img src="img3.jpg" height="100" width="200"><img src="img4.jpg" height="100" width="200"><img src="img5.jpg" height="100" width="200"><img src="img6.jpg" height="100" width="200"></marquee>
+</head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> 
+        <i class="fas fa-bars"></i>
+      </label>
+      <img style="margin-left: 10px;" src="logo.jpg" height="50px">
+    <ul>
+      <li><a id="nv"  href="mhome.html">Home</a></li>
+      <li><a id="nv" class="active" href="mregisterfree.html">Donor Registration</a></li>
+      <li><a id="nv"  href="mwtod.html">Why To Donate Blood</a></li>
+      <li><a id="nv"  href="mwreqblood.html">Who Requires Blood</a></li>
+      <li><a  id="nv" href="mtips.html">Tips</a></li>
+      <li><a  id="nv" href="msujjessions.html">Suggest Donors</a></li>
+      <li><a  id="nv" href="mabout.html">Contact Us</a></li>
+      <li><a  id="nv" href="mmedia.html">Media Center</a></li>
+      
+    </ul></nav>
+
+    
+       <div class="cls-child">
+            <div class="child" id="c1">
+              <font text="times new roman" color="red">
+                <h3>Donar Registration.</h3>
+                </font><br>
+              <form name="form1" action="datalink.php" method="post">
+
+      <label class="align-left"> First Name</label> 
+      <input type="text" name="fname" id="fname" onblur="chkf()" required><br>
+            <label class="align-left">Last Name</label>
+          <input type="text" name="lname" id="lname" onblur="chkl()" required>      <br><br>
+      <label class="align-left">Password</label>        
+      <input type="password" name="pass1" id="pass1" onblur="checkpass()" required> <br><br>
+      <label class="align-left">Confirm Password</label><input type="password" name="pass2" id="pass2" onblur="check()" required><br>
+           (please re-enter your password)<br><br>
+      
+         <label class="align-left">Date of birth</label>
+         <input type="date" id="bdate" name="bdate" required>(min-18 years)<br>
+         Date of birth will not be shown to others<br>
+         It is only for confirming your age<br><br>
+         
+      <label class="align-left">User Age:</label><input type="number" name="uage" id="uage" onblur="chkage()" required><br>	 
+      <label class="align-left">Enter your gender:</label>
+      <input type="radio" id="s1" name="similer">Male &nbsp; &nbsp;
+      <input type="radio" id="s2" name="similer">Female<br><br>
+      
+      <label class="align-left">Select your blood group</label><select name="bldg" id="bldg">
+      <option>select here</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+      <option>B-</option>
+      <option>O+</option>
+      <option>O-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+      </select><br><br>
+       <label class="align-left">Date of last blood donation</label>
+         <input type="date" name="ldate"><br><br>
+      <label class="align-left">Weight</label><input type="text" name="wait" id="wait" onblur="chkwait()" required><br><br>
+      <label class="align-left">Contact number:</label><br><br>
+      <label class="align-left">Mobile</label><input type="text" name="mno" id="mno" onblur="checkmnum()" required><br>
+      <label class="align-left">Telephone</label><input type="text" name="tno" id="tno" onblur="checktnum()"><br>
+      <label class="align-left">Office</label><input type="text" name="ono" id="ono" onblur="checkonum()""><br><br>
+      <label class="align-left">Email</label><input type="text" name="ueid" id="ueid" onblur="chkemail()"><br><br>
+      Alert message<input type="checkbox" name="amsg" id="amsg"><br>
+      You will recieve an alert message when there is request for your bolld group in your city.<br>
+      Hide mobile number from others:<input type="checkbox" name="amsg" id="amsg"><br>
+      <label class="align-left">State</label><input type="text" name="ustate" id="ustate" onblur="chks()"><br><br>
+      <label class="align-left">City</label><input type="text" name="ucity" id="ucity" onblur="chkc()"><br><br>
+      <label class="align-left">Area</label><input type="text" name="uarea" id="uarea" onblur="chka()"><br><br>
+      Have you donated blood before?<br>
+      <select>
+      <option>yes</option>
+      <option>no</option>
+      </select><br><br>
+      <hr>
+      Please check your eligibility to donate blood.<br>
+      <input type="checkbox" name="cc1" id="cc1">My hemoglobin is not less than 12.5 grms.<br>
+      <input type="checkbox" name="cc2" id="cc2">I am free from acute respiratory and skin diseases<br>
+      <input type="checkbox" name="cc3" id="cc3">I donot carry any disease transmissible from blood transfussion<br>
+      <input type="checkbox" name="cc4" id="cc4" >I am not under Medication for Maleria/Tuberculosis/Diabetis/fits<br><br><br>
+      I have not suffered from:<br>
+      <input type="checkbox" name="dc1" id="dc1">Hepathesis B,C<br>
+      <input type="checkbox" name="dc2" id="dc2">AIDS<br>
+      <input type="checkbox" name="dc3" id="dc3">Cancer<br>
+      <input type="checkbox" name="dc4" id="dc4">Kidney Disease<br>
+      <input type="checkbox" name="dc5" id="dc5" >Heart Disease<br><br>
+      #please consult your physician to check for eligibility.<br>
+       <input type="checkbox" name="confirm" id="confirm" onmouseup="check1()">I have read the avove eligiibility criteria and confirm that I am eligible to donate blood<br><br>
+      <input type="submit" value="submit" name="done" id="done"  disabled=true >
+      <input type="reset" value="reset" ><br>
+      Submit button will be not avalable untill you will be eligible to donate blood and also if you have not suffered from any disease. 
+      </font>
+      </form>
+      <!--
+      <video src="wdl mini proj/bd.mp4" autoplay muted></video>
+      -->
+                	
+            </div>
+            <div class="child" id="c2">
+                
+                <fieldset><legend>
+                    <font text="times new roman" color="red">
+                    <h3>Search A Donor</h3></legend>
+                    </font>
+                    <form name="dform1" method="post" action="srchd.php">
+                    State<input type="text" name="dstate" id="dstate"><br><br>
+                    City<input type="text" name="dcity" id="dcity"><br><br>
+                    Select your blood group<select id="blg" name="blg">
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    </select><br><br>
+                    <input type="submit" value="Find" color="red">
+                    </fieldset>  
+
+            </div>
+            <div class="child" id="c3">
+                
+                <fieldset><legend>
+                    <font color="green" text="times new roman">
+                    <h3>Related Sites</h3><br>
+                    </font></legend>
+                    <font color="blue">
+                    WWW.indianblooddonars.com<br>
+                    WWW.jeevan.com<br>
+                    WWW.blooddonations.com<br>
+                    WWW.aabb.com<br>
+                    WWW.redcross.com<br>
+                    </font>
+                    </fieldset>
+
+            </div>
+        </div>
+    
+</body>
+</html>

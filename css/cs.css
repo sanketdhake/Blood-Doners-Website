@@ -1,0 +1,79 @@
+<html>
+<title>
+Blood bank Management
+</title>
+<head>
+<style>
+div {
+position:fixed;
+top:0%;
+   margin:auto;
+    width: 1310px;
+    height: 100px;
+    border: 10px ridge red;
+   text-align:center; 
+    font-family:"Arial";
+    font-style:oblique;
+    font-size:100px;
+    font-weight:bold;
+   outline-style:solid;
+   //outline-color:pink;
+}
+div1{
+font-family:"Arial";
+font-style:oblique;
+font-size:25px;
+font-weight:bold;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333;
+position:fixed;
+top:0%;
+width:200%;
+ border: 1px solid #e7e7e7;
+    background-color: grey;//#f3f3f3
+
+}
+li{
+float:left;
+ //border-right:1px solid #bbb;
+}
+li a {
+    display: inline-block;
+     color:white;
+   text-align:center;
+    padding: 20px 50px;
+   text-decoration:none;
+    background-color:black;
+}
+
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+li a.active {
+    background-color: red;
+}
+
+
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}*/
+
+
+</style>
+
+</head>
+</html>

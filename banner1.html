@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+Banners=new Array('assets/images2.jpg','assets/images3.jpg','assets/images4.jpg','assets/images5.jpg','assets/img1.jpg','assets/img2.jpg','assets/img4.jpg','assets/img5.jpg','assets/img6.jpg','assets/slide1.jpg','assets/slide2.jpg')
+CurrentBanner=0;
+function displayBanners()
+{
+if(document.images)
+{
+CurrentBanner++
+if(CurrentBanner==Banners.length)
+{
+CurrentBanner=0
+}
+document.RotateBanner.src=Banners[CurrentBanner]
+setTimeout("displayBanners()",1500)
+}
+}
+</script>
+</head>
+<body onload="displayBanners()">
+<center>
+<img src="images5.jpg" height="400" width="400" name="RotateBanner">
+</center>
+</body>
+</html>

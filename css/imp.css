@@ -1,0 +1,23 @@
+
+p
+{
+	color:red;
+	text-align:center;
+}
+i
+{
+	color:white;
+}
+
+legend
+{
+	color:green;
+}
+div#header,div#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:#ffff00;background-color:#400040;margin-bottom:5px;
+}

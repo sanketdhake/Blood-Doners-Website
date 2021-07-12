@@ -1,0 +1,378 @@
+<html>
+<head>
+	<style type="text/css">
+		 .align-left {
+        float: left;
+        width: 25%;
+        text-align: left;
+      }
+	</style>
+<font text="times new roman" color="red">
+<h3>Donar Registration.</h3>
+</font>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+	function chkf()
+{
+			var r3=/[\D\]+[A-Za-z]/
+			var abc3=document.getElementById("fname").value;
+ 			with(window.document.forms.form1)
+			{
+					if(r3.test(abc3))
+					{
+					}
+					else
+					{
+						alert('invalid first name,only characters are allowd');
+						fname.value="";
+					}
+			}
+}
+
+
+
+function chkl()
+{
+			var r3=/[\D\]+[A-Za-z]/
+			var abc3=document.getElementById("lname").value;
+ 			with(window.document.forms.form1)
+			{
+					if(r3.test(abc3))
+					{
+					}
+					else
+					{
+						alert('invalid last name,only characters are allowd');
+						lname.value="";
+					}
+			}
+}
+
+
+	function checkpass()
+		{
+			with(window.document.forms.form1)
+ 			{
+ 				var check=pass1.value.length;
+ 				if(check<6)
+ 				{
+ 					alert('password is too small minimum 6 characters are required');
+					pass1.value="";
+ 				}
+ 			}
+		}
+
+function check()
+{
+with(window.document.forms.form1)
+{
+if(pass1.value==pass2.value)
+{
+}
+else
+{
+alert('your entered password is wrong');
+pass1.value="";
+pass2.value="";
+}
+}
+}
+
+function chkage()
+{
+	with(window.document.forms.form1)
+	{	if(uage.value<18)
+		{	
+		alert('you are not eligible to donate blood')
+		uage.value="";
+		}
+	}
+}
+	
+
+
+function chkwait()
+{
+	var w=document.getElementById("wait").value;
+	var rw=/[0-9]/
+	with(window.document.forms.form1)
+	{
+		if(rw.test(w))
+		{}
+		else
+		{
+			alert('invalid input,it should be in number format only')
+			wait.value="";
+		}
+		if(wait.value<50)
+		{
+			alert('you are not eligible to donate blood');
+			wait.value="";
+		}
+}
+}
+
+
+
+
+
+
+
+
+
+
+function checkmnum()
+{
+	var r1=/[0-9]/
+	var mnoc=document.getElementById("mno").value;
+	with(window.document.forms.form1)
+	{
+		if(r1.test(mnoc))
+		{}
+		else
+		{
+			alert('invalid input,numbers allowd only')
+			mno.value="";
+		}
+		if(mno.value.length>10)
+		{
+			alert('entered mobile number is too large')
+		}
+		if(mno.value.length<10)
+		{
+			alert('entered mobile number is too small')
+		}
+		
+	}
+}
+function checktnum()
+{
+	var r2=/[0-9]/
+	var tnoc=document.getElementById("tno").value;
+	with(window.document.forms.form1)
+	{
+		if(r2.test(tnoc))
+		{}
+		else
+		{
+			alert('invalid input,numbers allowd only')
+			tno.value="";
+		}
+		if(tno.value.length>8)
+		{
+			alert('entered mobile number is too large')
+		}
+		if(tno.value.length<8)
+		{
+			alert('entered mobile number is too small')
+		}
+		
+	}
+}
+function checkonum()
+{
+	var r3=/[0-9]/
+	var onoc=document.getElementById("ono").value;
+	with(window.document.forms.form1)
+	{
+		if(r3.test(onoc))
+		{}
+		else
+		{
+			alert('invalid input,numbers allowd only')
+			ono.value="";
+		}
+		if(ono.value.length>8)
+		{
+			alert('entered mobile number is too large')
+		}
+		if(ono.value.length<8)
+		{
+			alert('entered mobile number is too small')
+	}	}
+		
+}
+
+
+function check1()
+{
+	with(window.document.forms.form1)
+	{
+		if((cc1.checked==true) && (cc2.checked==true) && (cc3.checked==true) && (cc4.checked==true) && (dc1.checked==true) && (dc2.checked==true) && (dc3.checked==true) && (dc4.checked==true) && (dc5.checked==true) && (uage.value!="") && (wait.value!=""))
+		{
+			alert('As you have not suffered from any mentioned disease you are proven to be eligible to donate blood');
+			done.disabled=false;
+			log.disabled=false;
+		}
+		else
+		{
+			alert('go through form once again and check wether anything info is left')
+		}
+	}
+}
+
+function chkemail()
+{
+	var reg = /[A-Z0-9._%+-]+@[\bgmail\b]+.[\bcom\b]{2,4}/igm
+ 				var a=document.getElementById("ueid").value;
+ 				with(window.document.forms.form1)
+ 				{
+ 				if (reg.test(a))
+ 				{}
+ 				else
+ 				{
+ 					alert('Enter valid email address')
+ 					ueid.value="";
+ 				}
+ 			}
+	
+}
+
+
+
+function chks()
+{
+			var rr1=/[\D\]+[A-Za-z]/
+			var abc1=document.getElementById("ustate").value;
+ 			with(window.document.forms.form1)
+ 				{
+					if(rr1.test(abc1))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						ustate.value="";
+					}
+				}
+}
+function chkc()
+{
+			var rr2=/[\D\]+[A-Za-z]/
+			var abc2=document.getElementById("ucity").value;
+ 			with(window.document.forms.form1)
+ 				{
+					if(rr2.test(abc2))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						ucity.value="";
+					}
+				}
+}
+function chka()
+{
+			var rr3=/[\D\]+[A-Za-z]/
+			var abc3=document.getElementById("uarea").value;
+ 			with(window.document.forms.form1)
+			{
+					if(rr3.test(abc3))
+					{
+					}
+					else
+					{
+						alert('invalid input,only characters are allowd');
+						uarea.value="";
+					}
+			}
+}
+function opened()
+{
+
+	var a=window.document.forms.form1.fname.value;
+	var b=window.document.forms.form1.lname.value;
+		 document.write("you are successfully logged on as a blood donar");
+		 document.write("<font color='red'><center><h1>"+"CERTIFICATE"+"</h1></center></font>" );
+		 document.write("<fieldset><legend>"+"Certificate"+"</legend><font color='white'><center><h1>"+"..........."+"</h1></center></font><h2><p>This is to certify that the donar "+a+" "+b+" has successfully logged on to the Government site Bharat Blood Bank,and thank to him for his contribution in saving someone's life.</p>" +"</h2></fieldset>");
+
+		 document.write("<center><input type='button' value='Take Print'><input type='button' value='Send to your E-mail' onclick='dois()'></center>"); 
+		  
+}
+function dois()
+{
+	with(window.document.forms.form1)
+	{
+	alert('the softcopy of cecrtificate is successfully sended to your email')
+}
+}
+function openlog()
+{
+	window.open("logedinj.html","height=200,width=200")
+}
+
+</SCRIPT>
+</head>
+<body>
+<form name="form1" action="php/datalink.php" method="post">
+
+<label class="align-left"> First Name</label> 
+<input type="text" name="fname" id="fname" onblur="chkf()" required><br>
+      <label class="align-left">Last Name</label>
+	  <input type="text" name="lname" id="lname" onblur="chkl()" required>      <br><br>
+<label class="align-left">Password</label>        
+<input type="password" name="pass1" id="pass1" onblur="checkpass()" required> <br><br>
+<label class="align-left">Confirm Password</label><input type="password" name="pass2" id="pass2" onblur="check()" required><br>
+     (please re-enter your password)<br><br>
+
+	 <label class="align-left">Date of birth</label>
+	 <input type="date" id="bdate" name="bdate" required>(min-18 years)<br>
+	 Date of birth will not be shown to others<br>
+	 It is only for confirming your age<br><br>
+	 
+<label class="align-left">User Age:</label><input type="number" name="uage" id="uage" onblur="chkage()" required><br>	 
+<label class="align-left">Enter your gender:</label>
+<input type="radio" id="s1" name="similer">Male &nbsp; &nbsp;
+<input type="radio" id="s2" name="similer">Female<br><br>
+
+<label class="align-left">Select your blood group</label><select name="bldg" id="bldg">
+<option>select here</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select><br><br>
+ <label class="align-left">Date of last blood donation</label><br>
+	 <input type="date" name="ldate"><br>
+<label class="align-left">Weight</label><input type="text" name="wait" id="wait" onblur="chkwait()" required><br><br>
+<label class="align-left">Contact number:</label><br>
+<label class="align-left">Mobile</label><input type="text" name="mno" id="mno" onblur="checkmnum()" required><br>
+<label class="align-left">Telephone</label><input type="text" name="tno" id="tno" onblur="checktnum()"><br>
+<label class="align-left">Office</label><input type="text" name="ono" id="ono" onblur="checkonum()""><br><br>
+<label class="align-left">Email</label><input type="text" name="ueid" id="ueid" onblur="chkemail()"><br><br>
+<label class="align-left">Alert message</label><input type="checkbox" name="amsg" id="amsg"><br>
+You will recieve an alert message when there is request for your bolld group in your city.<br>
+Hide mobile number from others:<input type="checkbox" name="amsg" id="amsg"><br>
+<label class="align-left">State</label><input type="text" name="ustate" id="ustate" onblur="chks()"><br><br>
+<label class="align-left">City</label><input type="text" name="ucity" id="ucity" onblur="chkc()"><br><br>
+<label class="align-left">Area</label><input type="text" name="uarea" id="uarea" onblur="chka()"><br><br>
+Have you donated blood before?<br>
+<select>
+<option>yes</option>
+<option>no</option>
+</select><br><br>
+<hr>
+Please check your eligibility to donate blood.<br>
+<input type="checkbox" name="cc1" id="cc1">My hemoglobin is not less than 12.5 grms.<br>
+<input type="checkbox" name="cc2" id="cc2">I am free from acute respiratory and skin diseases<br>
+<input type="checkbox" name="cc3" id="cc3">I donot carry any disease transmissible from blood transfussion<br>
+<input type="checkbox" name="cc4" id="cc4" >I am not under Medication for Maleria/Tuberculosis/Diabetis/fits<br><br><br>
+I have not suffered from:<br>
+<input type="checkbox" name="dc1" id="dc1">Hepathesis B,C<br>
+<input type="checkbox" name="dc2" id="dc2">AIDS<br>
+<input type="checkbox" name="dc3" id="dc3">Cancer<br>
+<input type="checkbox" name="dc4" id="dc4">Kidney Disease<br>
+<input type="checkbox" name="dc5" id="dc5" >Heart Disease<br><br>
+#please consult your physician to check for eligibility.<br>
+ <input type="checkbox" name="confirm" id="confirm" onmouseup="check1()">I have read the avove eligiibility criteria and confirm that I am eligible to donate blood<br><br>
+<input type="submit" value="submit" name="done" id="done"  disabled=true >
+<input type="reset" value="reset" ><br>
+Submit button will be not avalable untill you will be eligible to donate blood and also if you have not suffered from any disease. 
+</font>
+</form>
+</body>
+</html>

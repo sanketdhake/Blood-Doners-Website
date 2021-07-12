@@ -1,0 +1,84 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function email(emid)
+{
+var reg = /[A-Z0-9._%+-]+@[\bgmail\b]+.[\bcom\b]{2,4}/igm
+ 				var a=emid.value;
+ 				with(window.document.forms.sform)
+ 				{
+ 				if (reg.test(a))
+ 				{
+ 				}
+ 				else
+ 				{
+ 					alert('Enter valid email address')
+ 					emid.value="";
+ 				}
+ 			}
+}
+function checkpass()
+		{
+			with(window.document.forms.sform)
+ 			{
+ 				var chk=pass.value.length;
+ 				if(chk<6)
+ 				{
+ 					alert('password is too small minimum 6 characters are required');
+					pass.value="";
+ 				}
+ 			}
+		}
+		function namechk(nam)
+		{
+			var r=/[\D\]+[A-Za-z]/
+			var abc=nam.value;
+ 			with(window.document.forms.sform)
+ 				{
+					if(r.test(abc))
+					{
+					}
+					else
+					{
+						alert('invalid name,only characters are allowd');
+						nam.value="";
+					}
+				}
+		}
+function reply()
+{
+	with(window.document.forms.sform)
+ 			{
+ 				if((uname.value!="") && (pass.value!=""))
+ 				{
+ 					alert('thanks for your provided information,we will try our best to make contact with them')
+ 				}
+ 				else
+ 				{
+ 					alert('enter your name and password')
+ 				}
+ 			}
+}
+
+
+</SCRIPT>
+</head>
+
+<body>
+<fieldset><legend><font color="red">Donor details</font></legend>
+<form name="sform" >
+Your name:<input type="text" name="uname" id="uname" onblur="namechk(uname)"><br>
+password :<input type="password" name="pass" id="pass" onblur="chkpass()">
+</fieldset>
+<fieldset><legend><font color="red">Refer friends</font></legend>
+<pre>Name                  Email</pre>
+<input type="text" name="s1" id="s1" onblur="namechk(s1)"><input type="text" name="e1" id="e1" onblur="email(e1)"><br>
+<input type="text" name="s2" id="s2" onblur="namechk(s2)"><input type="text" name="e2" id="e2" onblur="email(e2)"><br>
+<input type="text" name="s3" id="s3" onblur="namechk(s3)"><input type="text" name="e3" id="e3" onblur="email(e3)"><br>
+<input type="text" name="s4" id="s4" onblur="namechk(s4)"><input type="text" name="e4" id="e4" onblur="email(e4)"><br>
+<input type="text" name="s5" id="s5" onblur="namechk(s5)"><input type="text" name="e5" id="e5" onblur="email(e5)"><br>
+<input type="submit" value="submit" onclick="reply()">
+<input type="reset">
+</fieldset</form>
+</body>
+</html>

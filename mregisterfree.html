@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" type="text/css" href="css/proj.css">
+
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function namechk()
+		{
+			var r=/[\D\]+[A-Za-z]/
+			var abc=uname.value;
+ 			with(window.document.forms.m2)
+ 				{
+					if(r.test(abc))
+					{
+					}
+					else
+					{
+						alert('invalid name,only characters are allowd');
+						uname.value="";
+					}
+				}
+		}
+		function checkpass()
+		{
+			with(window.document.forms.m2)
+ 			{
+ 				var chk=pass.value.length;
+ 				if(chk<6)
+ 				{
+ 					alert('password is too small minimum 6 characters are required');
+					pass.value="";
+ 				}
+ 			}
+		}
+		function perform1()
+{
+	alert('you are successfully logged off')
+	window.open("mhome.html","height=200,width=200")
+}
+function doassay()
+		{
+			with(window.document.forms.m7)
+			{
+				if((uname.value!="")&&(pass.value!=""))
+				{
+					window.open("logedinj.html","height=200,width=200")
+				}
+				else
+				{
+					alert('fill all fields')
+				}
+			}		
+		} 
+</SCRIPT>
+
+
+
+
+</head>
+<body><form name="m2">
+
+<nav>
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> 
+        <i class="fas fa-bars"></i>
+      </label>
+      <img style="margin-left: 10px;" src="assets/logo.jpg" height="50px">
+<ul>
+  <li><a  href="mhome.html">Home</a></li>
+  <li><a class="active" href="mregisterfree.html">Donors Registration</a></li>
+  <li><a href="mwtod.html">Why To Donate Blood</a></li>
+  <li><a href="mwreqblood.html">Who Requires Blood</a></li>
+  <li><a href="mtips.html">Tips</a></li>
+  <li ><a href="msujjessions.html">Suggest Donors</a></li>
+  <li><a   href="mabout.html">Contact Us</a></li>
+   <li><a href="mmedia.html">Media Center</a></li>
+  
+</ul></nav>
+<iframe align="left" style="width: 50%; height: 1600px;" src="form.html" name="nform"></iframe>
+<iframe align="right" style="width: 49%; height: 300px;" src="fdonar.html" name="nfdonar"></iframe>
+<iframe align="right" style="width: 49%; height: 300px;" src="rsites.html" name="nrsites"></iframe>
+</form>
+
+</body>
+</html>

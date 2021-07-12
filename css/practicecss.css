@@ -1,0 +1,145 @@
+x
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.align-left {
+    float: left;
+    width: 25%;
+    text-align: left;
+  }
+.cls-child{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-auto-columns: minmax(500px,auto);
+    
+}
+.child{
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+video{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#c1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 4px solid gray;
+    width: 100%;
+    height: 100%;
+}
+#c2{
+    width: 99%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    border: 4px solid gray;
+    
+}
+
+#c3{
+    width: 99%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 4px solid gray;  
+ 
+}
+
+@media screen and (max-width : 1300px)
+{
+    .cls-child{
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-auto-columns: minmax(500px,auto);
+        
+    }
+    .child{
+    
+        position: relative;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    #c1{width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        border: 3px solid gray;
+    }
+    #c2{width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;    
+        border: 3px solid gray;
+    }
+    iframe{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      
+    }
+  
+    #c3{width: 100%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 3px solid gray;    
+    }
+    
+}
+@media screen and (max-width : 750px)
+{
+    .cls-child{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 4px;
+      
+      }
+      .child{
+        height: fit-content;
+        width: 100%;
+        flex: content;
+        border: 3px solid gray;
+      }  
+      #c1{height: fit-content;
+        width: 94%;
+        border: 3px solid gray;
+    }
+    #c2{height: fit-content;
+        width: 94%;
+        border: 3px solid gray;
+    }
+  
+     #c3{height: fit-content;
+        width: 94%;
+        border: 3px solid gray;    
+    }
+    
+}

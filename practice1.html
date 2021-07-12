@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="proj.css">
+    <link rel="stylesheet" href="practicecss.css">
+
+<marquee><img src="slide1.jpg" height="100" width="200"><img src="images4.jpg" height="100" width="200"><img src="images2.jpg" height="100" width="200"><img src="images3.jpg" height="100" width="200"><img src="img1.jpg" height="100" width="200"><img src="img2.jpg" height="100" width="200"><img src="img3.jpg" height="100" width="200"><img src="img4.jpg" height="100" width="200"><img src="img5.jpg" height="100" width="200"><img src="img6.jpg" height="100" width="200"></marquee>
+</head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> 
+        <i class="fas fa-bars"></i>
+      </label>
+      <img style="margin-left: 10px;" src="logo.jpg" height="50px">
+    <ul>
+      <li><a id="nv" class="active" href="mhome.html">Home</a></li>
+      <li><a id="nv"  href="mregisterfree.html">Donor Registration</a></li>
+      <li><a id="nv"  href="mwtod.html">Why To Donate Blood</a></li>
+      <li><a id="nv"  href="mwreqblood.html">Who Requires Blood</a></li>
+      <li><a  id="nv" href="mtips.html">Tips</a></li>
+      <li><a  id="nv" href="msujjessions.html">Suggest Donors</a></li>
+      <li><a  id="nv" href="mabout.html">Contact Us</a></li>
+      <li><a  id="nv" href="mmedia.html">Media Center</a></li>
+      
+    </ul></nav>
+
+    
+       <div class="cls-child">
+            <div class="child" id="c1">
+
+      <video src="bd.mp4" autoplay muted controls loop></video>
+      
+                	
+            </div>
+            <div class="child" id="c2">
+                
+                <fieldset><legend>
+                    <font text="times new roman" color="red">
+                    <h3>Search A Donor</h3></legend>
+                    </font>
+                    <form name="dform1" method="post" action="srchd.php">
+                    State<input type="text" name="dstate" id="dstate"><br><br>
+                    City<input type="text" name="dcity" id="dcity"><br><br>
+                    Select your blood group<select id="blg" name="blg">
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    </select><br><br>
+                    <input type="submit" value="Find" color="red">
+                    </fieldset>  
+
+            </div>
+            <div class="child" id="c3">
+                
+                <fieldset><legend>
+                    <font color="green" text="times new roman">
+                    <h3>Related Sites</h3><br>
+                    </font></legend>
+                    <font color="blue">
+                    WWW.indianblooddonars.com<br>
+                    WWW.jeevan.com<br>
+                    WWW.blooddonations.com<br>
+                    WWW.aabb.com<br>
+                    WWW.redcross.com<br>
+                    </font>
+                    </fieldset>
+
+            </div>
+        </div>
+    
+</body>
+</html>
